@@ -80,12 +80,10 @@ const Skills = () => {
                                         key={item.name}
                                     >
                                         <div className="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                                            <Image
+                                            <img
                                                 src={item.icon}
                                                 alt={item.name}
-                                                width={56}
-                                                height={56}
-                                                className="w-full h-full object-contain"
+                                                className="w-[56px] h-[56px] object-contain"
                                             />
                                         </div>
                                         <span className="text-base md:text-lg font-medium capitalize leading-tight">

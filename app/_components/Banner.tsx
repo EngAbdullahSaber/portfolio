@@ -137,11 +137,10 @@ const Banner = () => {
                     {[
                         { value: '3+', label: 'Years of Experience', delay: 0 },
                         {
-                            value: '7+',
+                            value: '9+',
                             label: 'Completed Projects',
                             delay: 0.1,
                         },
-                        { value: '10K+', label: 'Hours Worked', delay: 0.2 },
                     ].map((stat, index) => (
                         <div
                             key={index}
