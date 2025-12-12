@@ -1,18 +1,41 @@
 'use client';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 gsap.registerPlugin(useGSAP);
 
 const Preloader = () => {
     const preloaderRef = useRef<HTMLDivElement>(null);
 
+    // Block entire DOM on mount
+    useEffect(() => {
+        // Hide everything except preloader
+        document.documentElement.style.visibility = 'hidden';
+        document.body.style.overflow = 'hidden';
+        document.body.style.pointerEvents = 'none';
+
+        return () => {
+            // Restore when component unmounts
+            document.documentElement.style.visibility = '';
+            document.body.style.overflow = '';
+            document.body.style.pointerEvents = '';
+        };
+    }, []);
+
     useGSAP(
         () => {
             const tl = gsap.timeline({
                 defaults: {
                     ease: 'power1.inOut',
+                },
+                onComplete: () => {
+                    // Reveal content with delay for smooth transition
+                    gsap.delayedCall(0.3, () => {
+                        document.documentElement.style.visibility = 'visible';
+                        document.body.style.overflow = '';
+                        document.body.style.pointerEvents = '';
+                    });
                 },
             });
 
@@ -33,6 +56,13 @@ const Preloader = () => {
                     preloaderRef.current,
                     {
                         autoAlpha: 0,
+                        onComplete: () => {
+                            // Make preloader non-interactive after animation
+                            if (preloaderRef.current) {
+                                preloaderRef.current.style.pointerEvents =
+                                    'none';
+                            }
+                        },
                     },
                     '<1',
                 );
@@ -41,7 +71,7 @@ const Preloader = () => {
     );
 
     return (
-        <div className="fixed inset-0 z-[6] flex" ref={preloaderRef}>
+        <div className="fixed inset-0 z-[9999] flex" ref={preloaderRef}>
             <div className="preloader-item h-full w-[10%] bg-black"></div>
             <div className="preloader-item h-full w-[10%] bg-black"></div>
             <div className="preloader-item h-full w-[10%] bg-black"></div>

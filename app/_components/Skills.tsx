@@ -23,7 +23,7 @@ const Skills = () => {
                     trigger: containerRef.current,
                     start: 'top 80%',
                     end: 'bottom 80%',
-                    scrub: 0.5,
+                    scrub: 0.3,
                 },
             });
 
@@ -31,7 +31,7 @@ const Skills = () => {
                 opacity: 0,
                 y: 40,
                 ease: 'none',
-                stagger: 0.4,
+                stagger: 0.1,
             });
         },
         { scope: containerRef },
@@ -79,11 +79,18 @@ const Skills = () => {
                                         className="slide-up group flex flex-col gap-3 items-center text-center p-4 rounded-xl border border-transparent hover:border-border hover:bg-accent/50 transition-all duration-300 cursor-pointer"
                                         key={item.name}
                                     >
-                                        <div className="relative w-12 h-12 md:w-14 md:h-14 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                                            <img
+                                        <div className="relative w-14 h-14 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                            <Image
                                                 src={item.icon}
-                                                alt={item.name}
-                                                className="w-[56px] h-[56px] object-contain"
+                                                alt={`${item.name} icon`}
+                                                width={56}
+                                                height={56}
+                                                className="object-contain"
+                                                loading="eager"
+                                                priority={false}
+                                                unoptimized={item.icon.endsWith(
+                                                    '.svg',
+                                                )}
                                             />
                                         </div>
                                         <span className="text-base md:text-lg font-medium capitalize leading-tight">

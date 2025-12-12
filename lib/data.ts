@@ -102,54 +102,6 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Alaalami Website & CMS Platform',
-        slug: 'alaalami-website',
-        year: 2025,
-        techStack: [
-            'Next.js',
-            'React',
-            'Tailwind CSS',
-            'Node.js',
-            'Headless CMS',
-            'MongoDB',
-        ],
-        thumbnail: '/projects/thumbnail/alaalami.png',
-        longThumbnail: '/projects/long/alaalami-dashboard.png',
-        images: [
-            '/projects/images/al aalmia.png',
-            '/projects/images/al aalmiaDashboard.png',
-        ],
-        description: `
-    A professional multi-language corporate website with a complete admin dashboard for content, users, and SEO management. Built for Alaalami Company to handle all site sections with full bilingual (EN/AR) support.
-    <br/><br/>
-    <strong>Key Features:</strong>
-    <ul>
-      <li>🌐 Multi-language Support (English & Arabic)</li>
-      <li>🧩 Admin Dashboard for full content & user control</li>
-      <li>📱 Responsive design for all screen sizes</li>
-      <li>⚙️ Dynamic content management for pages & blogs</li>
-      <li>📈 Integrated SEO & analytics settings</li>
-    </ul><br/>
-
-    <strong>Dashboard Modules:</strong>
-    <ul>
-      <li>✅ Content Management: Pages, Blogs, Media, Menus</li>
-      <li>✅ User & Role Management: Admins, Permissions</li>
-      <li>✅ System Settings: Localization, SEO, Analytics, Forms</li>
-    </ul>
-    `,
-        role: `
-    Frontend Developer<br/>
-    <ul>
-      <li>🚀 Developed bilingual frontend using Next.js and Tailwind CSS</li>
-      <li>🎨 Built dynamic admin dashboard components</li>
-      <li>🔐 Integrated role-based access & authentication</li>
-      <li>🧠 Implemented content editing and localization system</li>
-      <li>📊 Connected frontend to headless CMS API</li>
-    </ul>
-    `,
-    },
-    {
         title: 'Soomha - Saudi Digital Platform',
         slug: 'soomha-digital-platform',
         year: 2025,
@@ -158,7 +110,6 @@ export const PROJECTS: IProject[] = [
             'Next.js',
             'Tailwind CSS',
             'REST API',
-            'Node.js / Laravel',
             'Animation',
         ],
         thumbnail: '/projects/thumbnail/soomha-platform.jpg',
@@ -175,7 +126,6 @@ export const PROJECTS: IProject[] = [
       <li>📱 Responsive Design for all devices</li>
       <li>💳 Integrated Saudi payment gateways (Mada, STC Pay)</li>
       <li>📊 Analytics & Reporting for platform insights</li>
-      <li>🗂️ Localized content and compliance (Hijri calendar, VAT, National Address)</li>
     </ul><br/>
 
     <strong>Dashboard Control System:</strong><br/>
@@ -203,15 +153,7 @@ export const PROJECTS: IProject[] = [
         title: 'Venuat - Multi-Vendor Venue Booking Platform',
         slug: 'venuat-booking-platform',
         year: 2025,
-        techStack: [
-            'React',
-            'Next.js',
-            'TypeScript',
-            'Node.js',
-            'MongoDB',
-            'REST API',
-            'Animation',
-        ],
+        techStack: ['React', 'Next.js', 'TypeScript', 'REST API', 'Animation'],
         thumbnail: '/projects/thumbnail/venuat-platform.jpg',
         longThumbnail: '/projects/long/venuat-platform.jpg',
         images: [
@@ -267,189 +209,6 @@ export const PROJECTS: IProject[] = [
     `,
     },
     {
-        title: 'Joe13th - Modern Portfolio & CMS Platform',
-        slug: 'joe13th-portfolio-cms',
-        year: 2025,
-        techStack: [
-            'Next.js',
-            'React',
-            'TypeScript',
-            'Tailwind CSS',
-            'REST API',
-            'GSAP',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/joe13th-portfolio.jpg',
-        longThumbnail: '/projects/long/joe13th-dashboard.jpg',
-        images: [
-            '/projects/images/joe13.png',
-            '/projects/images/joe13Dashboard.png',
-        ],
-        description: `
-    🚀 <strong>Joe13th - Modern Portfolio & CMS Platform</strong><br/><br/>
-    A sleek, multilingual (English/Japanese) portfolio website built for creatives to showcase their work and manage content effortlessly. It includes a full-featured CMS dashboard for managing pages, case studies, and blog posts, all built with performance and elegance in mind.
-    <br/><br/>
-    <strong>Key Features:</strong>
-    <ul>
-      <li>🌐 Multilingual Support (English/Japanese with localized URLs)</li>
-      <li>🧩 Admin Dashboard – Manage blogs, pages, and portfolio case studies</li>
-      <li>⚙️ Dynamic CMS – Add content dynamically via REST APIs</li>
-      <li>🎞️ Smooth Animations with GSAP & Framer Motion</li>
-      <li>📱 Responsive minimalist design with bold typography</li>
-      <li>⚡ Optimized SEO via Next.js SSR</li>
-    </ul><br/>
-
-    <strong>Dashboard Control System:</strong><br/>
-    <ul>
-      <li>✅ <b>Pages Editor:</b> Manage homepage, service, and about sections with meta tags</li>
-      <li>✅ <b>Portfolio Manager:</b> Add projects, upload media, and handle case studies</li>
-      <li>✅ <b>Blog Engine:</b> Draft, schedule, and publish posts with tags & categories</li>
-    </ul><br/>
-
-    <strong>Visit:</strong> <a href="https://www.joe13th.com/en" target="_blank">joe13th.com</a>
-    `,
-        role: `
-    <strong>Frontend Developer</strong><br/>
-    <ul>
-      <li>🚀 Developed multilingual frontend using Next.js and TypeScript</li>
-      <li>🎨 Built CMS dashboard with dynamic content modules</li>
-      <li>⚙️ Integrated REST APIs for blog, page, and portfolio data management</li>
-      <li>🌀 Implemented GSAP & Framer Motion animations for smooth transitions</li>
-      <li>📱 Ensured responsive and SEO-optimized performance</li>
-      <li>💡 Deployed and optimized on Vercel for global delivery</li>
-    </ul>
-    `,
-    },
-    {
-        title: 'Advanced Legal Practice Management System',
-        slug: 'legal-practice-management',
-        year: 2025,
-        techStack: [
-            'React',
-            'Next.js',
-            'Tailwind CSS',
-            'PHP',
-            'MySQL',
-            'REST API',
-        ],
-        thumbnail: '/projects/thumbnail/legal-platform.jpg',
-        longThumbnail: '/projects/long/legal-dashboard.jpg',
-        images: ['/projects/images/lawyer.png'],
-        description: `
-🚀 <strong>Advanced Legal Practice Management System</strong><br/><br/>
-A secure, bilingual (Arabic/English) legal platform built for law firms to manage clients, cases, and documents efficiently. Includes robust access control, court deadline tracking, and Sharia-compliance tools tailored for Saudi legal practice.<br/><br/>
-
-<strong>Key Features:</strong>
-<ul>
-  <li>⚖️ Multi-role Access Control (Super Admin, Lawyers, Clients + dynamic roles)</li>
-  <li>🌐 Full Bilingual Interface with RTL Arabic support</li>
-  <li>📂 Case Management System – Document drafting, court tracking, and deadlines</li>
-  <li>🔒 Enterprise Security – 2FA, watermarking, session controls</li>
-  <li>🕌 Sharia-Compliance Tools & Saudi Court Integrations</li>
-  <li>💼 Dynamic Role Permissions – Create and customize internal roles (e.g. Paralegal, Junior Associate)</li>
-</ul><br/>
-
-<strong>Core User Roles:</strong><br/>
-<b>1. Static Roles</b>
-<ul>
-  <li><b>Super Admin:</b> Full system control, user creation, billing, audit logs</li>
-  <li><b>Lawyer:</b> Manage assigned cases, documents, and client communications</li>
-  <li><b>Client:</b> View case status, upload documents, and pay invoices</li>
-</ul>
-
-<b>2. Dynamic Roles</b>
-<ul>
-  <li>Senior Partner – Approve case budgets</li>
-  <li>Junior Associate – Read-only case access</li>
-  <li>Paralegal – Document management only</li>
-</ul><br/>
-
-<strong>Technical Architecture:</strong>
-<ul>
-  <li>🧠 Frontend: React + Next.js (bilingual UI, RTL Arabic path /ar/)</li>
-  <li>⚙️ Backend: PHP (preferred for enterprise law apps)</li>
-  <li>🗄️ Database: MySQL</li>
-  <li>🔐 Security: 2FA, document watermarking, session timeouts</li>
-</ul><br/>
-
-<strong>Unique Differentiators:</strong>
-<ul>
-  <li>📘 Arabic/English Legal Terminology</li>
-  <li>🏛️ Saudi Court Integration for automatic filing deadlines</li>
-  <li>🕌 Sharia-Compliance Templates and automation tools</li>
-</ul>
-    `,
-        role: `
-<strong>Frontend Developer</strong><br/>
-<ul>
-  <li>🚀 Developed bilingual and RTL-friendly UI using React, Next.js, and Tailwind CSS</li>
-  <li>🔧 Integrated dynamic role-based access and permissions in the frontend</li>
-  <li>⚙️ Built reusable dashboard components for lawyers, clients, and admins</li>
-  <li>🔐 Implemented 2FA and session management UI flows</li>
-  <li>📁 Connected REST APIs for case, user, and document management</li>
-  <li>🎨 Delivered high-performance, enterprise-grade responsive design</li>
-</ul>
-    `,
-    },
-    {
-        title: 'Logistics & Supply Chain Management Platform',
-        slug: 'logistics-supply-chain-platform',
-        year: 2024,
-        techStack: [
-            'Next.js',
-            'React',
-            'TypeScript',
-            'Tailwind CSS',
-            'REST API',
-            'Framer Motion',
-            'Multi-language Support',
-        ],
-        thumbnail: '/projects/thumbnail/logistics-platform.jpg',
-        longThumbnail: '/projects/long/logistics-dashboard.jpg',
-        images: [
-            '/projects/images/logistics-home.png',
-            '/projects/images/logistics-services.png',
-        ],
-        description: `
-🚀 <strong>Logistics & Supply Chain Management Platform</strong><br/><br/>
-A modern, multilingual logistics website designed to showcase comprehensive supply chain solutions and services. Built with a focus on performance and user experience, it effectively communicates complex logistics services through an intuitive interface.
-<br/><br/>
-<strong>Key Features:</strong>
-<ul>
-  <li>🌐 Multi-language Support with seamless language switching</li>
-  <li>🚚 Comprehensive Service Showcase - Air, Sea, Land freight solutions</li>
-  <li>📊 Service Process Visualization - Clear workflow demonstrations</li>
-  <li>🎞️ Smooth Animations with Framer Motion for enhanced engagement</li>
-  <li>📱 Fully Responsive Design optimized for all devices</li>
-  <li>⚡ High Performance with Next.js SSR and optimized loading</li>
-  <li>🎯 Clear Call-to-Actions for lead generation and inquiries</li>
-</ul><br/>
-
-<strong>Service Coverage:</strong><br/>
-<ul>
-  <li>✅ <b>Air Freight:</b> Global air cargo solutions with real-time tracking</li>
-  <li>✅ <b>Sea Freight:</b> Container shipping and maritime logistics</li>
-  <li>✅ <b>Land Transport:</b> Trucking and rail freight services</li>
-  <li>✅ <b>Warehousing:</b> Storage and inventory management solutions</li>
-  <li>✅ <b>Supply Chain:</b> End-to-end logistics management</li>
-</ul><br/>
-
-<strong>Visit:</strong> <a href="https://logistics-website-woad.vercel.app/en/home" target="_blank">Logistics Platform</a>
-`,
-        role: `
-<strong>Frontend Developer</strong><br/>
-<ul>
-  <li>🚀 Developed multi-language frontend using Next.js and TypeScript</li>
-  <li>🎨 Implemented modern UI with Tailwind CSS for consistent styling</li>
-  <li>🌐 Built internationalization system with localized routing</li>
-  <li>🌀 Integrated smooth animations using Framer Motion</li>
-  <li>📱 Created fully responsive layouts for all device types</li>
-  <li>⚡ Optimized performance and SEO with Next.js best practices</li>
-  <li>🔧 Deployed and maintained on Vercel platform</li>
-</ul>
-`,
-    },
-    {
         title: 'School Bus Tracking & Safety Management System',
         slug: 'school-bus-tracking-system',
         year: 2024,
@@ -458,8 +217,7 @@ A modern, multilingual logistics website designed to showcase comprehensive supp
             'Next.js',
             'TypeScript',
             'Tailwind CSS',
-            'Node.js',
-            'MongoDB',
+
             'REST API',
             'Real-time Tracking',
         ],
@@ -544,8 +302,7 @@ A comprehensive child transportation safety platform that enables real-time bus 
             'React',
             'TypeScript',
             'Tailwind CSS',
-            'Node.js',
-            'MongoDB',
+
             'REST API',
             'Chart.js',
         ],
@@ -629,10 +386,8 @@ A comprehensive sales control platform designed for telecom companies to manage 
             'React',
             'TypeScript',
             'Tailwind CSS',
-            'Node.js',
-            'MongoDB',
+
             'REST API',
-            'Map Integration',
         ],
         thumbnail: '/projects/thumbnail/elite-gate.jpg',
         longThumbnail: '/projects/long/elite-gate-dashboard.jpg',
@@ -695,6 +450,290 @@ A comprehensive real estate marketplace that connects property buyers with selle
   <li>👥 Developed user dashboard for property management</li>
   <li>🌐 Implemented bilingual support (Arabic/English) with RTL layout</li>
   <li>⚡ Connected REST APIs for property data and user management</li>
+</ul>
+`,
+    },
+    {
+        title: 'Plan Fitness – Modern Fitness Experience',
+        slug: 'plan-fitness-project',
+        year: 2025,
+        techStack: ['Figma Design', 'UI/UX'],
+        thumbnail: '/projects/thumbnail/plan-fitness-thumb.png',
+        longThumbnail: '/projects/long/plan-fitness-dashboard.png',
+        images: [
+            '/projects/images/plan-fitness-1.png',
+            '/projects/images/plan-fitness-2.png',
+        ],
+        description: `
+🚀 <strong>Plan Fitness – Personalized Fitness & Training Platform</strong><br/><br/>
+A modern fitness platform designed to help users achieve their fitness goals through personalized workout plans, diet tracking, progress insights, and a clean, intuitive user experience.
+<br/><br/>
+<strong>Key Features:</strong>
+<ul>
+  <li>💪 Personalized workout plans based on user goals</li>
+  <li>📅 Training schedule & daily progress tracking</li>
+  <li>📊 Performance analytics with charts</li>
+  <li>🔥 Calorie & nutrition tracking</li>
+  <li>🎧 Modern and clean UI with a focus on usability</li>
+  <li>📱 Fully responsive design</li>
+</ul>
+`,
+        role: `
+<strong>UI & UX Designer</strong><br/>
+<ul>
+  <li>🎨 Designed the full platform experience using Figma</li>
+  <li>🧩 Created user journeys, wireframes, and high-fidelity screens</li>
+  <li>🚀 Built an organized component system for reusable design patterns</li>
+  <li>📱 Ensured a responsive and modern visual style across all screens</li>
+  <li>✨ Focused on clarity, simplicity, and user engagement</li>
+</ul>
+`,
+    },
+    {
+        title: 'Real State – Modern Real Estate Platform',
+        slug: 'real-state-platform',
+        year: 2025,
+        techStack: ['Figma Design', 'UI/UX'],
+        thumbnail: '/projects/thumbnail/real-state-thumb.png',
+        longThumbnail: '/projects/long/real-state-dashboard.png',
+        images: [
+            '/projects/images/real-state-1.png',
+            '/projects/images/real-state-2.png',
+        ],
+        description: `
+🚀 <strong>Real State – A Modern Platform for Property Buying & Selling</strong><br/><br/>
+A clean, minimal, and user-friendly real estate platform designed to make property discovery easier than ever. The interface focuses on simplicity, advanced filtering, and seamless browsing.
+<br/><br/>
+<strong>Key Features:</strong>
+<ul>
+  <li>🏠 Property listings with clean card-style layout</li>
+  <li>🔍 Advanced filtering (location, price, type, status)</li>
+  <li>📍 Interactive map view for property locations</li>
+  <li>📸 High-quality property galleries</li>
+  <li>💼 Agent details and contact options</li>
+  <li>📱 Fully responsive and modern UI</li>
+</ul>
+`,
+        role: `
+<strong>UI & UX Designer</strong><br/>
+<ul>
+  <li>🎨 Designed the full real estate system using Figma</li>
+  <li>🔧 Built a clean and minimal design system & component library</li>
+  <li>📊 Created property cards, filters, map UI, and agent profile pages</li>
+  <li>📱 Ensured a smooth responsive layout for mobile and desktop</li>
+  <li>✨ Focused on a modern user flow for browsing and discovering properties</li>
+</ul>
+`,
+    },
+    {
+        title: 'Joe13th - Modern Portfolio & CMS Platform',
+        slug: 'joe13th-portfolio-cms',
+        year: 2025,
+        techStack: [
+            'Next.js',
+            'React',
+            'TypeScript',
+            'Tailwind CSS',
+            'REST API',
+            'GSAP',
+            'Framer Motion',
+        ],
+        thumbnail: '/projects/thumbnail/joe13th-portfolio.jpg',
+        longThumbnail: '/projects/long/joe13th-dashboard.jpg',
+        images: [
+            '/projects/images/joe13.png',
+            '/projects/images/joe13Dashboard.png',
+        ],
+        description: `
+    🚀 <strong>Joe13th - Modern Portfolio & CMS Platform</strong><br/><br/>
+    A sleek, multilingual (English/Japanese) portfolio website built for creatives to showcase their work and manage content effortlessly. It includes a full-featured CMS dashboard for managing pages, case studies, and blog posts, all built with performance and elegance in mind.
+    <br/><br/>
+    <strong>Key Features:</strong>
+    <ul>
+      <li>🌐 Multilingual Support (English/Japanese with localized URLs)</li>
+      <li>🧩 Admin Dashboard – Manage blogs, pages, and portfolio case studies</li>
+      <li>⚙️ Dynamic CMS – Add content dynamically via REST APIs</li>
+      <li>🎞️ Smooth Animations with GSAP & Framer Motion</li>
+      <li>📱 Responsive minimalist design with bold typography</li>
+      <li>⚡ Optimized SEO via Next.js SSR</li>
+    </ul><br/>
+
+    <strong>Dashboard Control System:</strong><br/>
+    <ul>
+      <li>✅ <b>Pages Editor:</b> Manage homepage, service, and about sections with meta tags</li>
+      <li>✅ <b>Portfolio Manager:</b> Add projects, upload media, and handle case studies</li>
+      <li>✅ <b>Blog Engine:</b> Draft, schedule, and publish posts with tags & categories</li>
+    </ul><br/>
+
+    <strong>Visit:</strong> <a href="https://www.joe13th.com/en" target="_blank">joe13th.com</a>
+    `,
+        role: `
+    <strong>Frontend Developer</strong><br/>
+    <ul>
+      <li>🚀 Developed multilingual frontend using Next.js and TypeScript</li>
+      <li>🎨 Built CMS dashboard with dynamic content modules</li>
+      <li>⚙️ Integrated REST APIs for blog, page, and portfolio data management</li>
+      <li>🌀 Implemented GSAP & Framer Motion animations for smooth transitions</li>
+      <li>📱 Ensured responsive and SEO-optimized performance</li>
+      <li>💡 Deployed and optimized on Vercel for global delivery</li>
+    </ul>
+    `,
+    },
+    {
+        title: 'Advanced Legal Practice Management System',
+        slug: 'legal-practice-management',
+        year: 2025,
+        techStack: ['React', 'Next.js', 'Tailwind CSS', 'REST API'],
+        thumbnail: '/projects/thumbnail/legal-platform.jpg',
+        longThumbnail: '/projects/long/legal-dashboard.jpg',
+        images: ['/projects/images/lawyer.png'],
+        description: `
+🚀 <strong>Advanced Legal Practice Management System</strong><br/><br/>
+A secure, bilingual (Arabic/English) legal platform built for law firms to manage clients, cases, and documents efficiently. Includes robust access control, court deadline tracking, and Sharia-compliance tools tailored for Saudi legal practice.<br/><br/>
+
+<strong>Key Features:</strong>
+<ul>
+  <li>⚖️ Multi-role Access Control (Super Admin, Lawyers, Clients + dynamic roles)</li>
+  <li>🌐 Full Bilingual Interface with RTL Arabic support</li>
+  <li>📂 Case Management System – Document drafting, court tracking, and deadlines</li>
+  <li>🔒 Enterprise Security – 2FA, watermarking, session controls</li>
+  <li>🕌 Sharia-Compliance Tools & Saudi Court Integrations</li>
+  <li>💼 Dynamic Role Permissions – Create and customize internal roles (e.g. Paralegal, Junior Associate)</li>
+</ul><br/>
+
+<strong>Core User Roles:</strong><br/>
+<b>1. Static Roles</b>
+<ul>
+  <li><b>Super Admin:</b> Full system control, user creation, billing, audit logs</li>
+  <li><b>Lawyer:</b> Manage assigned cases, documents, and client communications</li>
+  <li><b>Client:</b> View case status, upload documents, and pay invoices</li>
+</ul>
+
+<b>2. Dynamic Roles</b>
+<ul>
+  <li>Senior Partner – Approve case budgets</li>
+  <li>Junior Associate – Read-only case access</li>
+  <li>Paralegal – Document management only</li>
+</ul><br/>
+
+<strong>Technical Architecture:</strong>
+<ul>
+  <li>🧠 Frontend: React + Next.js (bilingual UI, RTL Arabic path /ar/)</li>
+</ul><br/>
+
+<strong>Unique Differentiators:</strong>
+<ul>
+  <li>📘 Arabic/English Legal Terminology</li>
+  <li>🏛️ Saudi Court Integration for automatic filing deadlines</li>
+  <li>🕌 Sharia-Compliance Templates and automation tools</li>
+</ul>
+    `,
+        role: `
+<strong>Frontend Developer</strong><br/>
+<ul>
+  <li>🚀 Developed bilingual and RTL-friendly UI using React, Next.js, and Tailwind CSS</li>
+  <li>🔧 Integrated dynamic role-based access and permissions in the frontend</li>
+  <li>⚙️ Built reusable dashboard components for lawyers, clients, and admins</li>
+  <li>🔐 Implemented 2FA and session management UI flows</li>
+  <li>📁 Connected REST APIs for case, user, and document management</li>
+  <li>🎨 Delivered high-performance, enterprise-grade responsive design</li>
+</ul>
+    `,
+    },
+    {
+        title: 'Alaalami Website & CMS Platform',
+        slug: 'alaalami-website',
+        year: 2025,
+        techStack: ['Next.js', 'React', 'Tailwind CSS'],
+        thumbnail: '/projects/thumbnail/alaalami.png',
+        longThumbnail: '/projects/long/alaalami-dashboard.png',
+        images: [
+            '/projects/images/al aalmia.png',
+            '/projects/images/al aalmiaDashboard.png',
+        ],
+        description: `
+    A professional multi-language corporate website with a complete admin dashboard for content, users, and SEO management. Built for Alaalami Company to handle all site sections with full bilingual (EN/AR) support.
+    <br/><br/>
+    <strong>Key Features:</strong>
+    <ul>
+      <li>🌐 Multi-language Support (English & Arabic)</li>
+      <li>🧩 Admin Dashboard for full content & user control</li>
+      <li>📱 Responsive design for all screen sizes</li>
+      <li>⚙️ Dynamic content management for pages & blogs</li>
+      <li>📈 Integrated SEO & analytics settings</li>
+    </ul><br/>
+
+    <strong>Dashboard Modules:</strong>
+    <ul>
+      <li>✅ Content Management: Pages, Blogs, Media, Menus</li>
+      <li>✅ User & Role Management: Admins, Permissions</li>
+      <li>✅ System Settings: Localization, SEO, Analytics, Forms</li>
+    </ul>
+    `,
+        role: `
+    Frontend Developer<br/>
+    <ul>
+      <li>🚀 Developed bilingual frontend using Next.js and Tailwind CSS</li>
+      <li>🎨 Built dynamic admin dashboard components</li>
+      <li>🔐 Integrated role-based access & authentication</li>
+      <li>🧠 Implemented content editing and localization system</li>
+      <li>📊 Connected frontend to headless CMS API</li>
+    </ul>
+    `,
+    },
+    {
+        title: 'Logistics & Supply Chain Management Platform',
+        slug: 'logistics-supply-chain-platform',
+        year: 2024,
+        techStack: [
+            'Next.js',
+            'React',
+            'TypeScript',
+            'Tailwind CSS',
+            'REST API',
+            'Framer Motion',
+            'Multi-language Support',
+        ],
+        thumbnail: '/projects/thumbnail/logistics-platform.jpg',
+        longThumbnail: '/projects/long/logistics-dashboard.jpg',
+        images: [
+            '/projects/images/logistics-home.png',
+            '/projects/images/logistics-services.png',
+        ],
+        description: `
+🚀 <strong>Logistics & Supply Chain Management Platform</strong><br/><br/>
+A modern, multilingual logistics website designed to showcase comprehensive supply chain solutions and services. Built with a focus on performance and user experience, it effectively communicates complex logistics services through an intuitive interface.
+<br/><br/>
+<strong>Key Features:</strong>
+<ul>
+  <li>🌐 Multi-language Support with seamless language switching</li>
+  <li>🚚 Comprehensive Service Showcase - Air, Sea, Land freight solutions</li>
+  <li>📊 Service Process Visualization - Clear workflow demonstrations</li>
+  <li>🎞️ Smooth Animations with Framer Motion for enhanced engagement</li>
+  <li>📱 Fully Responsive Design optimized for all devices</li>
+  <li>⚡ High Performance with Next.js SSR and optimized loading</li>
+  <li>🎯 Clear Call-to-Actions for lead generation and inquiries</li>
+</ul><br/>
+
+<strong>Service Coverage:</strong><br/>
+<ul>
+  <li>✅ <b>Sea Freight:</b> Container shipping and maritime logistics</li>
+  <li>✅ <b>Warehousing:</b> Storage and inventory management solutions</li>
+  <li>✅ <b>Supply Chain:</b> End-to-end logistics management</li>
+</ul><br/>
+
+<strong>Visit:</strong> <a href="https://logistics-website-woad.vercel.app/en/home" target="_blank">Logistics Platform</a>
+`,
+        role: `
+<strong>Frontend Developer</strong><br/>
+<ul>
+  <li>🚀 Developed multi-language frontend using Next.js and TypeScript</li>
+  <li>🎨 Implemented modern UI with Tailwind CSS for consistent styling</li>
+  <li>🌐 Built internationalization system with localized routing</li>
+  <li>🌀 Integrated smooth animations using Framer Motion</li>
+  <li>📱 Created fully responsive layouts for all device types</li>
+  <li>⚡ Optimized performance and SEO with Next.js best practices</li>
+  <li>🔧 Deployed and maintained on Vercel platform</li>
 </ul>
 `,
     },

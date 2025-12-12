@@ -43,6 +43,8 @@
     }
     body {
         @apply bg-background text-foreground font-roboto-flex;
+        scroll-behavior: smooth;
+        overscroll-behavior-y: contain;
     }
 }
 

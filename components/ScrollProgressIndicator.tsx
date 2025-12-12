@@ -9,22 +9,49 @@ const ScrollProgressIndicator = () => {
     const [scrollProgress, setScrollProgress] = useState(0);
 
     useEffect(() => {
-        const handleScroll = () => {
-            if (scrollBarRef.current) {
-                const { scrollHeight, clientHeight } = document.documentElement;
-                const scrollableHeight = scrollHeight - clientHeight;
-                const scrollY = window.scrollY;
-                const progress = (scrollY / scrollableHeight) * 100;
+        const scrollBar = scrollBarRef.current;
+        let ticking = false;
+        let lastScrollY = typeof window !== 'undefined' ? window.scrollY : 0;
+        let lastUpdateTime = performance.now();
 
+        const update = () => {
+            if (!scrollBar) {
+                ticking = false;
+                return;
+            }
+
+            const { scrollHeight, clientHeight } = document.documentElement;
+            const scrollableHeight = Math.max(scrollHeight - clientHeight, 1);
+            const progress = (lastScrollY / scrollableHeight) * 100;
+
+            // Apply transform directly to avoid rerendering
+            scrollBar.style.transform = `translateY(-${100 - progress}%)`;
+
+            // Update visibility only when it changes to avoid frequent state updates
+            setIsVisible((prev) => {
+                const next = lastScrollY > 300;
+                return prev === next ? prev : next;
+            });
+
+            // Throttle progress text updates to ~150ms
+            const now = performance.now();
+            if (now - lastUpdateTime > 150) {
                 setScrollProgress(progress);
-                setIsVisible(scrollY > 300); // Show after scrolling 300px
+                lastUpdateTime = now;
+            }
 
-                scrollBarRef.current.style.transform = `translateY(-${
-                    100 - progress
-                }%)`;
+            ticking = false;
+        };
+
+        const handleScroll = () => {
+            lastScrollY = window.scrollY;
+            if (!ticking) {
+                ticking = true;
+                requestAnimationFrame(update);
             }
         };
 
+        // Initial update
         handleScroll();
 
         window.addEventListener('scroll', handleScroll, { passive: true });
